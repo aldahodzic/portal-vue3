@@ -17,6 +17,12 @@ export default {
     function test(){
       store.dispatch('init/changeLayout',lval.value)
     }
+    function getValuesFromWebpackConfiguration(){
+      console.log(process.env.VUE_APP_TITLE)
+      console.log(process.env.VUE_APP_VERSION)
+      console.log(process.env.VUE_APP_AUTHOR)
+    }
+    getValuesFromWebpackConfiguration()
     return {
       test,
       lval
